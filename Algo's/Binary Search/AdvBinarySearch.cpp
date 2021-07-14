@@ -14,7 +14,7 @@ double multiply(double number, int n)
     return ans;
 }
 
-double getNthRoot(int n, int m)
+void getNthRoot(int n, int m)
 {
     double low = 1;
     double high = m;
@@ -38,6 +38,7 @@ double getNthRoot(int n, int m)
     // just to check
     cout << pow(m, (double)(1.0 / (double)n));
 }
+
 int main()
 {
     int n, m;
@@ -45,3 +46,5 @@ int main()
     getNthRoot(n, m);
     return 0;
 }
+
+// the time complexity of the above code is -> O(n*log2(m*10^d)) : considering the precision upto 10 decimal places.
